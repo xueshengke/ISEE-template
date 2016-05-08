@@ -1,0 +1,22 @@
+# This file ignores some redundant files and prevents them from adding to github repository.
+
+# directory
+Papers
+figure
+figures
+section
+
+# file
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.bak
+*.snm
+*.sav
+*.toc
+*.nav
+*.out
+*.gz
+

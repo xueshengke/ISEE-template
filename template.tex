@@ -1,0 +1,69 @@
+\documentclass[10pt, mathserif]{beamer}	% font and size
+\mode<presentation>
+{
+	\setbeamercovered{dynamic}	% translucent when using pause
+	\setbeamertemplate{navigation symbols}{}	% hide navigation bars
+	\setbeamertemplate{caption}[numbered]	% numerate captions
+	\setbeamertemplate{background}{\includegraphics[height=\paperheight]{ISEE.pdf}}	% set background image
+	\setbeamertemplate{footline}{\footnotesize \insertframenumber/\inserttotalframenumber \hfill}	% display page number at bottom left corner	
+}
+\usepackage{CJKutf8}	% encode for Chinese
+\usepackage{times}		% font for english
+\usepackage{amsmath, amsfonts, amssymb}	% math equations, symbols
+\usepackage[english]{babel}
+\usepackage{color}		% color content
+\usepackage{graphicx}	% import figures
+\usepackage{url}		% hyperlinks
+\usepackage{bm}			% bold type for equations
+\usepackage{hyperref}	% bookmarks
+\hypersetup{bookmarks, unicode}	% unicode
+
+\newcommand{\ftitle}[1]{\frametitle{\hspace{4ex} {#1}}}	% userdefine frametitle
+
+\begin{document}
+\begin{CJK}{UTF8}{song}	% all Chinese should be enclosed between the commands
+
+\title[abbreviation]{ title 中文标题}
+\author{ 作者Name \\ ***********@zju.edu.cn}
+\institute[ISEE]{\normalsize College of Information Science and Electronic Engineering \\信息与电子工程学院\\Zhejiang University\\浙江大学}
+\date{Spring, 2016}
+
+\AtBeginSection[]
+{
+\begin{frame}
+   	\ftitle{Outline 目录}
+    \tableofcontents[currentsection, currentsubsection]
+\end{frame}
+}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{First 书签一}
+\begin{frame}
+	中文内容显示
+	\begin{align}
+		a^2 = b^2 + c^2 \\
+		\sum_{i=1}^{K} \alpha \beta \lambda 
+	\end{align}	
+\end{frame}
+
+\section{References 参考文献}
+\begin{frame}[allowframebreaks]
+	\ftitle{Bibliography}
+	中文内容显示
+    \label{Reference}
+    \bibliographystyle{apalike}
+    \bibliography{mybibliography}
+\end{frame}
+
+\section{Thanks 致谢}
+\begin{frame}
+	\ftitle{End}
+	Thanks for your listening. \\
+	感谢！
+\end{frame}
+
+\end{CJK}
+\end{document}
