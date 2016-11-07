@@ -8,7 +8,7 @@
 	\setbeamertemplate{footline}{\footnotesize \insertframenumber/\inserttotalframenumber \hfill}	% display page number at bottom left corner	
 }
 \usepackage{CJKutf8}	% encode for Chinese
-\usepackage{times}		% font for english
+\usepackage{times}		% font for english, Times New Roman
 \usepackage{amsmath, amsfonts, amssymb}	% math equations, symbols
 \usepackage[english]{babel}
 \usepackage{color}		% color content
@@ -26,7 +26,7 @@
 \title[abbreviation]{ title 中文标题}
 \author{ 作者Name \\ ***********@zju.edu.cn}
 \institute[ISEE]{\normalsize 
-		\includegraphics[width=0.2\textwidth]{ZJU_BLUE.pdf}  \\
+		\includegraphics[width=0.2\textwidth]{ZJU_BLUE.pdf}  \\  % add a special logo on cover page
 	College of Information Science and Electronic Engineering \\
 	信息与电子工程学院\\
 	Zhejiang University\\
@@ -37,13 +37,13 @@
 \AtBeginSection[]
 {
 \begin{frame}
-   	\ftitle{Outline 目录}
+   	\ftitle{Outline 目录}		% contents for better review
     \tableofcontents[currentsection, currentsubsection]
 \end{frame}
 }
 
 \begin{frame}
-    \titlepage
+    \titlepage	% make the cover page here
 \end{frame}
 
 \section{First 书签一}
@@ -59,12 +59,12 @@
 \begin{frame}[allowframebreaks]
 	\ftitle{Bibliography}
 	中文内容显示
-	The not so short introduction to LATEX2$\varepsilon$ \cite{knuth1984texbook} \\
+	The not so short introduction to LATEX2$\varepsilon$ \cite{Oetiker2015Latex} \\
 	~\\
-	The texbook \cite{oetiker1995not}
+	The texbook \cite{knuth1984texbook}
     \label{Reference}
-    \bibliographystyle{apalike}
-    \bibliography{mybibliography}
+    \bibliographystyle{apalike}	   % different styles, such as ieee
+    \bibliography{mybibliography}  % make reference list
 \end{frame}
 
 \section{Thanks 致谢}
