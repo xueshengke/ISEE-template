@@ -1,3 +1,8 @@
+% This project is a template slides for the subsequent presentations which are significant during the postgraduate period.
+% Template for College of Information Science and Electronic Engineering, Zhejiang University.
+% Compiled with pdflatex.
+% By Xue Shengke.
+
 \documentclass[10pt, mathserif]{beamer}	% font and size
 \mode<presentation>
 {
@@ -5,8 +10,9 @@
 	\setbeamertemplate{navigation symbols}{}	% hide navigation bars
 	\setbeamertemplate{caption}[numbered]	% numerate captions
 	\setbeamertemplate{background}{\includegraphics[height=\paperheight]{ISEE.pdf}}	% set background image
-	\setbeamertemplate{footline}{\footnotesize \insertframenumber/\inserttotalframenumber \hfill}	% display page number at bottom left corner	
+	\setbeamertemplate{footline}{\textcolor{light-gray}{\scriptsize \insertframenumber/\inserttotalframenumber} \hfill}	% display page number at bottom left corner	
 }
+%\usepackage{ctex}
 \usepackage{CJKutf8}	% encode for Chinese
 \usepackage{times}		% font for english, Times New Roman
 \usepackage{amsmath, amsfonts, amssymb}	% math equations, symbols
@@ -18,7 +24,8 @@
 \usepackage{hyperref}	% bookmarks
 \hypersetup{bookmarks, unicode}	% unicode
 
-\newcommand{\ftitle}[1]{\frametitle{\hspace{4ex} {#1}}}	% userdefine frametitle
+\newcommand{\ftitle}[1]{\frametitle{#1}}	% userdefine frametitle
+\definecolor{light-gray}{gray}{0.90}
 
 \begin{document}
 \begin{CJK}{UTF8}{song}	% all Chinese should be enclosed between the commands
@@ -28,8 +35,8 @@
 \institute[ISEE]{\normalsize 
 		\includegraphics[width=0.2\textwidth]{ZJU_BLUE.pdf}  \\  % add a special logo on cover page
 	College of Information Science and Electronic Engineering \\
-	信息与电子工程学院\\
-	Zhejiang University\\
+	信息与电子工程学院 \\
+	Zhejiang University \\
 	浙江大学
 	}
 \date{Spring, 2016}
